@@ -7,7 +7,9 @@ t$Global_intensity <- as.numeric(t$Global_intensity)
 t$Sub_metering_1 <- as.numeric(t$Sub_metering_1)
 t$Sub_metering_2 <- as.numeric(t$Sub_metering_2) 
 t$Sub_metering_3 <- as.numeric(t$Sub_metering_3) 
+
 png("plot2.png")
-plot(t$dT,t$Global_active_power,type='n',main = "", xlab="", ylab="Global Active Power (kilowatts)") 
+plot(t$dT,t$Global_active_power,type='n',main = "", 
+     xlab="", ylab="Global Active Power (kilowatts)") 
 lines(t$dT,t$Global_active_power, type='l') 
 dev.off()
