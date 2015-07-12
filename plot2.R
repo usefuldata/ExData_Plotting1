@@ -1,3 +1,4 @@
+## 'Assumed that the file is downloaded.
 t <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",stringsAsFactors=F)
 t <- t[which(t$Date == '1/2/2007' | t$Date == '2/2/2007'),] 
 t$dT <- strptime(paste(t$Date, t$Time, sep = " : "), format = "%e/%m/%Y : %H:%M:%S") 
